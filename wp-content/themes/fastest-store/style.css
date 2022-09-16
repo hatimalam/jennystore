@@ -1,0 +1,227 @@
+/*
+Theme Name: Fastest Store
+Author: aThemeArt
+Author URI: https://athemeart.com/
+Theme URI: https://athemeart.com/downloads/fastest-store-child-theme/
+Description: Looking forward to taking your business online? You might want to check out the Fastest Store eCommerce child theme. This theme is specifically designed for creating online stores using WordPress. It comes with all features and tools you need to get started. The Storefront theme comes with full WooCommerce integration. That means setting up your online store will be a breeze. Just install the WooCommerce plugin, and you’ll be ready to start selling products in no time. The adequate space for product images and descriptions will make shopping on your site a breeze for customers. Moreover, It also comes with a handy cart widget. This makes it easy for customers to keep track of the items they’re interested in. And when they’re ready to check out, the cart widget will take them to the checkout page. With Elementor powerful drag-and-drop page builder, you can easily customize your site to match your unique style. The page builder makes adding, removing, or rearranging elements on your pages easy. Download the  Fastest Store  today and start building your dream eCommerce site!
+Template: fastest-shop
+Version: 1.0.1
+Requires at least: 5.0
+Tested up to: 6.0
+Requires PHP: 7.0
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl.html
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, sticky-post, custom-background, custom-header, custom-colors, custom-menu, featured-images, full-width-template, translation-ready, theme-options, threaded-comments, custom-logo, blog, e-commerce
+Text Domain: fastest-store
+
+Fastest Store WordPress Theme, Copyright 2022 aThemeArt
+Fastest Store is distributed under the terms of the GNU GPL
+
+Fastest Store is child theme of Fastest Shop WordPress Theme, Copyright 2022 aThemeArt
+*/
+:root {
+  --primary-color: #919191!important;
+  --secondary-color: #0067CE!important;
+  --tertiary-color: #000!important;
+  --quaternary-color: #f9f9f9!important;
+  --rating-color: #0067CE!important;
+   --nav-sub-color:#0067CE!important;
+  --nav-color: #000!important;
+  --nav-color-h: #0067CE!important;
+  --nav-sub-color-h: #fff!important;
+  --nav-sub-bg-h: #0067CE!important;
+}
+
+body, input, select, optgroup, textarea {
+  font-family: 'Jost', sans-serif!important;
+  line-height: 28px!important;
+}
+/*---------------------------------------------
+	#Header 5
+-----------------------------------------------*/
+.container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1300px!important;
+}
+.sidebar-menu li a, #secondary .widget li a{
+	color: var(--tertiary-color)!important;
+}
+#secondary .widget li:hover > a,
+#secondary .widget li a:focus,
+#secondary .widget li.focus > a{
+	color: var(--secondary-color)!important;
+}
+a:hover, a:focus{
+	color: var(--tertiary-color);!important;
+}
+
+@media (min-width: 901px){
+	#masthead.site-header.header-5{
+		position: absolute;
+		background: 0 0;
+		padding-bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 9999;
+		margin-top: 30px;
+		border: none;
+	}
+	#masthead.site-header.header-5 .container{
+		background: var(--quaternary-color);
+		-webkit-border-top-right-radius: 5px;
+		-moz-border-top-right-radius: 5px;
+		border-top-right-radius: 5px;
+		-webkit-border-bottom-right-radius: 5px;
+		-moz-border-bottom-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+	#masthead.site-header .logo-wrap{
+		transform: translateX(0px);
+	}
+	#masthead.site-header.header-5 .branding-wrap{
+		width: auto;
+		flex: initial;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		flex-basis: 200px;
+		color: #fff;
+	}
+	#masthead.site-header.header-5 .branding-wrap h3 a{
+		color: #fff;
+	}
+
+	#masthead.site-header.header-5 .branding-wrap::after{
+		content: "";
+		content: "";
+		position: absolute;
+		top: -20px;
+		right: 20%;
+		left: -15px;
+		height: calc( 100% + 40px );
+		background: var(--secondary-color);
+		-webkit-border-top-left-radius: 5px;
+		-moz-border-top-left-radius: 5px;
+		border-top-left-radius: 5px;
+		-webkit-border-bottom-left-radius: 5px;
+		-moz-border-bottom-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	#masthead.site-header.header-5 .branding-wrap::before {
+		content: "";
+		position: absolute;
+		top: -20px;
+		left: 25%;
+		right:-30px;
+		width: auto;
+		bottom: -20px;
+		background: var(--secondary-color);
+		-webkit-transform: skewX(27deg);
+		-ms-transform: skewX(27deg);
+		transform: skewX(27deg);
+		z-index: 1;
+		
+	}
+
+	#masthead.site-header.header-5 .header-info{
+		padding: 10px;
+		padding-left: 80px;
+		background: #353838;
+		margin-right: -15px;
+		-webkit-border-bottom-right-radius: 5px;
+		-moz-border-bottom-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+
+	}
+	#masthead.site-header.header-5 .flat-support{
+		margin-bottom: 0px;
+		text-align: right;
+		width: auto;
+		color: var(--quaternary-color);
+	}
+	#masthead.site-header.header-5 .flat-support li,
+	#masthead ul.header-icon > li > a{
+		color: #fff!important;
+	}
+	#masthead.site-header.header-5 .item-wrap-4{
+		margin-left: auto;
+
+	}
+	#static_header_banner.header-5 .site-header-text-wrap,
+	.banner-wrap.header-5 .site-header-text-wrap{
+		padding-top: 150px!important;
+	}
+	#navbar > ul > li > a{
+		padding: 0px 20px!important
+	}
+	ul.flat-support li::after{
+		right: -25px;
+	}
+	ul.flat-support li:first-child::after {
+		content: "/"!important;
+	}
+	ul.flat-support li:last-child::after{
+		display: none!important;
+	}
+	ul.fastest-shop-breadcrumbs li:after {
+		content: "-"!important;
+		right: -5px!important;
+		top: 0px!important;
+		
+	}
+}
+@media (max-width: 900px){
+	ul.flat-support{
+		display: none;
+	}
+	#masthead.site-header.header-5 .d-flex{
+		display: block!important;
+	}
+	#masthead.site-header.header-5 .header-icon{
+		padding-bottom: 15px;
+	}
+	
+}
+#review_form .comment-reply-title{
+	padding-top: 0px!important;
+}
+.fastest-shop-blogwrap .entry-title a{
+	color: #000;
+}
+.fastest-shop-blogwrap .entry-title a:hover,
+.fastest-shop-blogwrap .entry-title a:focus{
+	color: var(--secondary-color);
+}
+body.single .comment-respond .col-12{
+	padding-bottom: 15px;
+}
+
+#colophon.site-footer a{
+	color: var(--tertiary-color);
+}
+#colophon.site-footer a:hover,
+#colophon.site-footer a:focus{
+	color: var(--secondary-color);
+}
+aside#secondary h3.widget-title, 
+.related.products h2, .upsells.products h2, 
+.cross-sells h2,
+.comments-title.widget-title, #respond.comment-respond .widget-title{
+	color: var(--tertiary-color)!important
+}
+
+#static_header_banner.header-style-1{
+	height: 70vh!important;
+	min-height: 300px;
+}
+#static_header_banner .site-header-text-wrap{
+	padding-top: 180px;
+}
+#static_header_banner h1{
+	font-size: 3rem;
+}
+#static_header_banner p{
+	max-width: 800px;
+	display: block;
+	margin: 0px auto;
+}
