@@ -3,6 +3,7 @@ wp-config.php
 wp-content/*
 !wp-content/themes/
 !wp-content/plugins/
+!wp-content/uploads/
 *.log
 sitemap.xml
 sitemap.xml.gz
